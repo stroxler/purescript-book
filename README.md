@@ -4,6 +4,25 @@ This repository contains a [community fork](https://github.com/purescript-contri
 
 If you enjoyed the book or found it useful, please consider buying a copy of [the original on Leanpub](https://leanpub.com/purescript).
 
+## Troxler Notes
+
+This is my fork of the repo, for going through the examples myself.
+
+Setup to use purescript on MacOS (assuming nix as a package manager):
+```
+nix-env -iA nixpkgs.purescript nixpkgs.spago
+```
+Note that as of May 28, 2023 if you try to install nix purescript on
+an M1 you'll get an error complaining that the architecture isn't
+supported... my experience was that if I followed the directions to
+ignore that error it worked fine.
+
+Setup for editor support: to get started I decided to take the easy route and
+use VSCode with the Purescript IDE plugin. It works great out of the box if you
+navigate to a project root (this will be a particular chapter of the
+`exercises` folder, e.g. `./exercises/chapter2`) and open it with `code .`.
+
+
 ## Status
 
 This book is being continuously updated as the language evolves, so please report any [issues](https://github.com/purescript-contrib/purescript-book/issues) you discover with the material. We appreciate any feedback you have to share, even if it's as simple as pointing out a confusing section that we could make more beginner-friendly.
